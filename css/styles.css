@@ -67,7 +67,7 @@ img {
   list-style: none;
 }
 
-.address-footer {
+address {
   font-style: normal;
 }
 
@@ -196,6 +196,7 @@ header > .container {
 
 .hero {
   max-width: 1600px;
+  margin: 0 auto;
   background: var(--background-color-hero);
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
@@ -261,12 +262,13 @@ header > .container {
 }
 
 .features-icon {
+  height: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  /* padding-top: 25px; */
+  /* padding-bottom: 25px; */
   background-color: var(--light-theame-color);
   border-radius: 4px;
 }
@@ -281,8 +283,7 @@ header > .container {
 }
 
 .features-item > p {
-  padding-top: 3px;
-  padding-bottom: 3px;
+  margin-bottom: 10px;
 }
 
 /* ===============END Особенности =========*/
@@ -379,7 +380,7 @@ header > .container {
 }
 /*===============END Команда =========*/
 
-/*===============  КLIENTS =========*/
+/*===============  СLIENTS =========*/
 
 .clients-list {
   display: flex;
@@ -390,14 +391,13 @@ header > .container {
 }
 
 .clients-item {
+  height: 90px;
   display: flex;
   justify-content: center;
-  /* align-items: center; */
+  align-items: center;
   flex-basis: calc(100% / 6 - var(--card-gap));
   margin-left: var(--card-gap);
   margin-top: var(--card-gap);
-  padding-top: 19px;
-  padding-bottom: 19px;
   border: 1px solid var(--social-svg-color);
   border-radius: 4px;
   background-color: transparent;
@@ -405,7 +405,7 @@ header > .container {
 
 .clients-link {
   display: flex;
-  /* justify-content: center; */
+  justify-content: center;
   align-items: center;
   color: var(--social-svg-color);
 }
@@ -439,7 +439,6 @@ header > .container {
 
 .footer-address {
   margin-right: 70px;
-  padding-right: 15px;
 }
 
 .footer .logo {
@@ -449,6 +448,10 @@ header > .container {
   color: var(--white-color);
 }
 
+.footer-list-item:not(:last-child) {
+  margin-bottom: 6px;
+}
+
 .footer-address-link {
   color: var(--white-color);
   padding: 5px 0;
@@ -456,10 +459,6 @@ header > .container {
 
 .address-link {
   color: rgba(255, 255, 255, 0.6);
-}
-
-.footer-list-item:not(:last-child) {
-  margin-bottom: 6px;
 }
 
 .footer-sociall > b {
@@ -547,7 +546,6 @@ header > .container {
 
 .card-wrapper:hover,
 .card-wrapper:focus {
-  border: 1px solid var(--border-cards-color);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
